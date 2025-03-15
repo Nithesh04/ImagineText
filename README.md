@@ -76,6 +76,3 @@ To run this project, you will need to
 
 
 
-## Authors
-
-- [Nithesh G](https://github.com/Nithesh04)
