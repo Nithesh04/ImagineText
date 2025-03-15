@@ -56,25 +56,14 @@ Add the following environment variables to your .env file in the client folder
 
 `VITE_API_URL=http://localhost:5000`
 
-## Environment Variables
 
-To run this project, you will need to 
-## API Reference
-
-#### Get all items
-
-```http
-  POST /api/extractTextFromImage
-```
-
-| Parameter | Type     | Description                        |
-| :-------- | :------- | :--------------------------------- |
-| `file`    | `file`   | **Required**. Image file to process|
 
 
 ## Screenshots
 
-![Image](https://github.com/user-attachments/assets/c43347cd-a266-477d-a6d4-2674c5f94b8e)
+![Image](https://github.com/user-attachments/assets/1c1cc0df-d86c-48bd-85ca-ee045cefdbe0)
+
+![Image](https://github.com/user-attachments/assets/22430e7e-2a25-4625-beb0-8779415ea76a)
 
 
 
