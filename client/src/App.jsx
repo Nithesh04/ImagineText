@@ -51,32 +51,32 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-white-500 to-white-600 text-black p-12">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-200 to-gray-300 text-black p-10">
       <Heading content="ImagineText" />
-      <br/>
-      <SubHeading  />
+      <SubHeading />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-7xl mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl mt-10">
         
-        <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl shadow-2xl w-full min-h-[500px] flex flex-col justify-center items-center">
-          <h2 className="text-2xl font-semibold text-center mb-6">Upload Image</h2>
-          <form onSubmit={handleSubmit} className="w-full flex flex-col items-center space-y-6">
+        
+        <div className="bg-white p-8 rounded-xl shadow-md w-full min-h-[400px] flex flex-col justify-center items-center">
+          <h2 className="text-xl font-semibold text-center mb-4">Upload Image</h2>
+          <form onSubmit={handleSubmit} className="w-full flex flex-col items-center space-y-4">
             <input
               type="file"
               name="file"
               id="file"
-              className="block text-black w-full text-white-300  file:mr-4 file:py-4 file:px-8 file:rounded-lg file:border-0 file:text-xl file:font-semibold file:bg-black/20 file:text-white hover:file:bg-grey/50 transition"
+              className="block w-full file:py-3 file:px-6 file:rounded-lg file:border-0 file:text-lg file:font-medium file:bg-gray-200 file:text-black hover:file:bg-gray-300 transition"
               onChange={handleImageChange}
               accept="image/*"
             />
             {selectedImage && (
-              <div className="mt-6">
-                <img src={selectedImage} alt="Selected" className="max-w-96 max-h-96 rounded-lg shadow-lg" />
+              <div className="mt-4">
+                <img src={selectedImage} alt="Selected" className="max-w-56 max-h-56 rounded-lg shadow" />
               </div>
             )}
             <button
               type="submit"
-              className="w-full bg-blue-400 hover:bg-white-700 transition px-8 py-4 rounded-xl text-black font-semibold disabled:bg-gray-400 text-xl"
+              className="w-full bg-blue-500 hover:bg-blue-700 transition px-6 py-3 rounded-lg text-white font-medium text-lg"
               disabled={loading}
             >
               {loading ? <Spinner /> : "Extract Text"}
@@ -85,17 +85,17 @@ const App = () => {
         </div>
 
         
-        <div className="bg-blue backdrop-blur-lg p-12 rounded-3xl shadow-2xl w-full min-h-[500px] flex flex-col justify-center">
-          <h2 className="text-2xl font-semibold text-center mb-6">Extracted Text</h2>
+        <div className="bg-white p-8 rounded-xl shadow-md w-full min-h-[400px] flex flex-col justify-center">
+          <h2 className="text-xl font-semibold text-center mb-4">Extracted Text</h2>
           <textarea
             id="text"
-            className="w-full h-80 bg-white/20 text-black p-6 text-xl rounded-lg resize-none shadow-lg"
+            className="w-full h-48 bg-gray-100 text-black p-4 text-lg rounded-lg resize-none shadow-inner"
             value={text}
             readOnly
             ref={textareaRef}
           ></textarea>
           <button
-            className="w-full mt-6 bg-green-500 hover:bg-green-700 transition px-8 py-4 rounded-xl text-black font-semibold text-xl"
+            className="w-full mt-4 bg-green-500 hover:bg-green-700 transition px-6 py-3 rounded-lg text-white font-medium text-lg"
             onClick={() => {
               navigator.clipboard.writeText(text);
               alert("Text copied to clipboard!");
