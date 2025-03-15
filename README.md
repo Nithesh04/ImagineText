@@ -3,7 +3,7 @@
 
 Introducing Imagine Text 💡. Harness TesseractJS to effortlessly convert image text into editable, copyable text. Unleash the power of visualization! 📷🔍
 
-live:https://imaginetext-frontend.onrender.com
+Live:https://imaginetext-frontend.onrender.com
 
 
 
