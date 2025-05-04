@@ -66,4 +66,7 @@ Add the following environment variables to your .env file in the client folder
 ![Image](https://github.com/user-attachments/assets/22430e7e-2a25-4625-beb0-8779415ea76a)
 
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/#) 
+
 
