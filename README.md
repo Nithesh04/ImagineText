@@ -61,9 +61,9 @@ Add the following environment variables to your .env file in the client folder
 
 ## Screenshots
 
-![Image](https://github.com/user-attachments/assets/1c1cc0df-d86c-48bd-85ca-ee045cefdbe0)
+![Image](https://github.com/user-attachments/assets/f1db4ce5-5849-43b7-9c2a-5e3459e86abf)
 
-![Image](https://github.com/user-attachments/assets/22430e7e-2a25-4625-beb0-8779415ea76a)
+![Image](https://github.com/user-attachments/assets/8461f3ed-39b2-4ace-bf7b-2ecc04cdf0be)
 
 
 ## License
